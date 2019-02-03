@@ -1,0 +1,47 @@
+$def with(datos)
+
+
+<div class="container">
+<div class="row">
+	<div class="col-md-12">
+		
+	
+	<h1>Productos</h1>
+
+<div class="table-responsive">
+<caption>Lista de productos</caption>
+<table class="table">
+	<thead class="thead-dark">
+	<th class="col">Nombre</th>
+	<th class="col">Precio</th>
+	<th class="col">Marca</th>
+	<th class="col">Descripcion</th>
+	<th class="col">Update</th>
+	<th class="col">Delete</th>
+	<th class="col">View</th>
+</thead>
+	$for row in datos:
+		<tr>
+			<td>$row.nombre</td>
+			<td>$row.precio</td>
+			<td>$row.marca</td>
+			<td>$row.descripcion</td>
+			<td><a href="/update/$row.nombre">Update</a></td>
+			<td><a href="/delete/$row.nombre">Delete</a></td>
+			<td><a href="/view/$row.nombre">View</a></td>
+		</tr>
+	
+</table>
+</div>
+<center>
+	
+	<a href="/insert" class="btn btn-primary">insertar nuevo</a>
+</center>
+
+
+
+
+	</div>
+	</div>
+</div>
+

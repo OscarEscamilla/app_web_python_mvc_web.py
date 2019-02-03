@@ -1,0 +1,29 @@
+$def with(datos)
+
+
+<div class="container">
+	<h1>Eliminar cliente</h1>
+ <form method="POST">
+<div class="form-group">
+ 	<label for="nombre">Nombre</label>
+	<input type="text" name="nombre" id="nombre"   value="$datos.nombre" readonly="true" class="form-control">
+</div>
+	<div class="form-group">
+	<label for="direccion">Direccion</label>
+	<input type="text" name="direccion" id="direccion"  value="$datos.direccion" readonly="true" class="form-control">
+</div>
+	<div class="form-group">
+	<label for="sexo">Sexo</label>
+	<input type="text" name="sexo" id="sexo" value="$datos.sexo" readonly="true" class="form-control">
+</div>
+	<div class="form-group">
+	<label for="correo">Correo</label>
+	<input type="text" name="correo" id="correo"  value="$datos.correo" readonly="true" class="form-control">
+</div>
+	
+	<button type="submit" class="btn btn-danger">Eliminar</button>
+
+
+ </form>
+
+ </div>
